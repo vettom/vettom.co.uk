@@ -36,5 +36,5 @@ Nested list
 	- sub2
 	- sub3
 
-- [] Task list
+- [ ] Task list
 - [x] completed task
