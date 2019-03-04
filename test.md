@@ -8,6 +8,12 @@ Below is a quote:
 
 ` elbctl -a list -s action -d dest -g groupname`
 
-** This is bold text **
+-- This is bold text --
+
+```
+git pull
+git clone
+git status apply
+```
 
 
