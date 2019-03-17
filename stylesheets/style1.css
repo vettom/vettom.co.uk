@@ -1,0 +1,62 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font: 14px merienda, kalam, Georgia, serif;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #012459;
+  color: white;
+}
+
+
+/* Section for importing code block */
+@import "https://cdn.rawgit.com/google/code-prettify/master/styles/desert.css";
+$lightGray: #fafafa;
+$medBlue: #9baecf;
+$char: #292929;
+
+body {
+  width: 50%;
+  margin: 0 auto;
+  @media (max-width: 650px) {
+    width: 75%;
+  }
+  @media (max-width: 430px) {
+    width: 100%;
+  }
+}
+
+code,
+.code,
+pre {
+  font-family: 'Source Code Pro';
+  background: $char;
+  color: $lightGray;
+  font-size: 16px;
+  padding: 0;
+  padding: 10px;
+  &:before {
+    display: block;
+    width: calc(100%);
+    margin-left: -3px;
+    margin-top: -3px;
+    padding: 3px;
+    text-transform: uppercase;
+    content: attr(data-lang);
+    background: $medBlue;
+  }
+  .o {
+    color: orange;
+  }
+  .w {
+    color: white;
+  }
+}
