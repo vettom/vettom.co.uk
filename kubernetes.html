@@ -36,10 +36,64 @@
        <div class="fakeimg" style="height:80px;"> <h3>To be where you have never been before, you have to do what you have never done before! </h3></div> 
     </div>
     <div class="card">
-      <h2>Denny Vettom Writeup</h2>
-      <h5>My blogs and write ups</h5>
-      <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
-        <p> My writups area
+      <h1>Health Checks</h1>
+        
+        <p> 
+    </div>
+    <div class="card">
+      <h1>Resource Control</h1>
+        
+        <p> Tequests are limits are K8 way of controling resources like CPU and Memory. </p>
+        <p> <B>CPU : </B> Resources are measured in millicores. If containers requires 2 full cores to run then the value is 2000m. If none of the nodes in the cluster have enough cores, your pod will not be scheduled. Unless application is multicore, recommended to keep single core and create more deployments  </p>
+        <p> CPU is considered compressible object. If app starts hitting the limits, k8 will start throttling the container and performance of container will be affected but not terminated or evicted </p> 
+    <p> <b> Memory : </b> Memory is measures in Mebibytes (Mi) and is not compressible resource. If container goes past memory limit, it will be terminated </p>
+
+    <h2>Names Space Resource Control </h2>
+    <p> It is possible for badly configured containers to take up more resource than allowed and cause problems.  K8 provides 2 options to solve this problem. Resource quota can be allocated to Namespaces. For eg, Production can get unlimited, while dev resources are throtled.</p>
+    <li>Resource Quota (Applicaed at namespace level) </li>
+    <li>LimitRange (Applied at container level with in Namespace) </li>
+
+    <h2> Resource Quota (Namespace Level) </h2>
+
+    <pre data-lang='python' class='prettyprint'>
+    apiVersion: v1
+    kind : resourceQuota
+    metadata:
+        name: demo
+    spec:
+        hard:
+          requests.cpu: 500m
+          requests.memory: 100Mib
+          limits.cpu: 700m
+      limits.meory: 500Mib
+    </pre>
+    <p><b>Requests.cpu :</b> Total CPU that can be allocated with in the namespace. As long as total CPU requirement does not exceed, there can be any number of containers with in the limit. </p>
+    <p><b> Limits.cpu : </b>  Is the maximum CPU can be consumed by Namespace. </p>
+
+    <h2> LimitRange (Container  Level) </h2>
+
+    <pre data-lang='python' class='prettyprint'>
+      apiVersion: v1
+      kind: LimitRange
+      metadata:
+        name:demo
+      spec:
+        limits:
+      - default:
+          cpu: 600m
+          memory: 100Mib
+        defaultRequest:
+          cpu: 100Mib
+          memory: 50Mib
+        max:
+          cpu: 1000m
+          memory: 200Mib
+        min:
+          cpu: 10m
+          memory: 10Mib
+        type: Container
+
+    </pre>
     </div>
  
 
