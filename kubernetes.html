@@ -36,15 +36,16 @@
        <div class="fakeimg" style="height:80px;"> <h3>To be where you have never been before, you have to do what you have never done before! </h3></div> 
     </div>
     <div class="card">
-      <h1>Health Checks</h1>
+     <a name="Health_Checks" <h1>Health Checks</h1> </a>
         
         <p> 
     </div>
     <div class="card">
-      <h1>Resource Control</h1>
+      <a name="ResoureControl" ><h1>Resource Control</h1> </a>
         
-        <p> Tequests are limits are K8 way of controling resources like CPU and Memory. </p>
+        <p> Requests are limits are K8 way of controling resources like CPU and Memory. </p>
         <p> <B>CPU : </B> Resources are measured in millicores. If containers requires 2 full cores to run then the value is 2000m. If none of the nodes in the cluster have enough cores, your pod will not be scheduled. Unless application is multicore, recommended to keep single core and create more deployments  </p>
+        <p><B><i> 1 CPU Core = 1000 MilliCore</i></B></p>
         <p> CPU is considered compressible object. If app starts hitting the limits, k8 will start throttling the container and performance of container will be affected but not terminated or evicted </p> 
     <p> <b> Memory : </b> Memory is measures in Mebibytes (Mi) and is not compressible resource. If container goes past memory limit, it will be terminated </p>
 
@@ -94,20 +95,39 @@
         type: Container
 
     </pre>
+
+    <p><b> default section :</b> Defines default maximum for a container if not specified </p>
+      <p><b> defaultRequest :</b> Defines default minimum resources if not specifies for container </p>
+      <p><b> max : </b> Maximum resource a container can be configured to run. This cannot be lower than 'default' </p>
+      <p><b> min : </b> Minimum resources a container can be allocated. It cannot be lower than'defaultRequest'</p>
+    
+    <p><b> If max and min set without 'defaults' max becomes 'default' and min becomes 'defaultRequest' </b></p>
+
+    <h2> Over committed resources state </h2>
+    <p> If not enough resources available to provisione, pods go in to "Pending" state. additional capacity must be added to resolve the issue. If existing resurces are overcommited CPU and memory are handled different
+      <li> CPU : K8 will throtle the pods to provide requested amount of CPU</li>
+      <li> Mem : Memory cannot be complressed, s k8 will have to kill some pods to free up resources. K8 looks for pods that using more resources than requested and are first candidate for termination. Or look for contaners gone above request but under the limits, K8 will rank pods by priority and terminates one with lowest priority. If all pods have same priority, K8 will terminate pod that had gone most above the request. </li>
     </div>
- 
+   <div class="card">
+      <a name="External_Services" ><h1>Connectig to External services</h1> </a>
+  </div>
 
  <!-- Links at the side of page -->
   </div>
   <div class="rightcolumn">
     <div class="card">
       <h2>Links</h2>
-      <li><a class="nostyle" href="#"> Link1 </a></li>
+      <li><a class="nostyle" href="#ResoureControl"> Resource Control </a></li>
+      <li><a class="nostyle" href="#Health_Checks"> Health check </a></li>
+      <li><a class="nostyle" href="#External_services"> External Services </a></li>
+      <li><a class="nostyle" href="#ResoureControl"> Resource Control </a></li>
      <!-- <div class="fakeimg" style="height:100px;">Image</div> -->
       <p>Links for sub page categories.</p>
     </div>
 
   </div>
+
+ 
 </div>
 
 <div class="footer">
