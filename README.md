@@ -1,10 +1,10 @@
 # vettom.github.io
 
 ### My Public Repos
-- [AWS-Boto3][https://github.com/vettom/Aws-Boto3] Few Python scripts using AWS Boto3. Also advanced with a text based CMDB
-- [Python Basics][https://github.com/vettom/PythonBasics]  :Sample python script and functions for beginners
-- [Scripts][https://github.com/vettom/Scripts]  : Few shell scripts working with AWS CLI
-- [Aces][https://vettom.github.io/aces/] : Wheelchair Basktball moves demonstrated with Adobe After Effect Animation
+- [AWS-Boto3](https://github.com/vettom/Aws-Boto3) Few Python scripts using AWS Boto3. Also advanced with a text based CMDB
+- [Python Basics](https://github.com/vettom/PythonBasics)  :Sample python script and functions for beginners
+- [Scripts](https://github.com/vettom/Scripts)  : Few shell scripts working with AWS CLI
+- [Aces](https://vettom.github.io/aces/) : Wheelchair Basktball moves demonstrated with Adobe After Effect Animation
 
 ### Scripts 
 - [dnsctl.py](https://github.com/vettom/Aws-Boto3#dnsupdatepy)               : Add/remove/update DNS record
