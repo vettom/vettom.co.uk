@@ -15,7 +15,7 @@
 ## dnsctl.py
     Script can create DNS A record or Alias record on Route 53. If there is requirement to create multiple aliases to single domain, you can provide it as space separated arguments or list domains in a file.
     - Set your Default Zone ID in script or provide as -z argument.
-
+  
 ```
 dnsctl.py -h
 usage: dnsctl.py [-h] (-s SRC_URL [SRC_URL ...] | -f SRC_FILE)
