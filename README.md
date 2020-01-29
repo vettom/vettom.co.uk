@@ -8,7 +8,7 @@
 
 # Development Principle
 ```
-- Accuracy 
+*A*ccuracy 
 - Best Practices
 - Consistency 
 - Documentation
