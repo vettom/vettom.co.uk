@@ -6,6 +6,16 @@
 - [Scripts](https://github.com/vettom/Scripts)  : Few shell scripts working with AWS CLI
 - [Aces](https://vettom.github.io/aces/) : Wheelchair Basktball moves demonstrated with Adobe After Effect Animation
 
+# Development Principle
+```
+- Accuracy 
+- Best Practices
+- Consistency 
+- Documentation
+- Exception Handling
+- Failure test
+```
+
 ### Scripts 
  > Requires: Python 3.x, Boto3, AWS Cli Config files
 - [dnsctl.py](https://github.com/vettom/Aws-Boto3#dnsupdatepy)               : Add/remove/update DNS record
