@@ -8,12 +8,12 @@
 
 # Development Principle
 ```
-*A*ccuracy 
-- Best Practices
-- Consistency 
-- Documentation
-- Exception Handling
-- Failure test
+A - Accuracy 
+B - Best Practices
+C - Consistency 
+D - Documentation
+E - Exception Handling
+F - Failure test
 ```
 
 ### Scripts 
