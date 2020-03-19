@@ -1,20 +1,13 @@
-# vettom.github.io
+# vettom.github.io ![alt text](https://vettom.github.io/images/dv-tec-logo-round2cm.png "Denny Vettom  Tech Logo")
 
-### My Public Repos
+### My Public Repos 
 - [AWS-Boto3](https://github.com/vettom/Aws-Boto3) Python scripts using AWS Boto3. Also advanced with a text based CMDB
 - [Python Basics](https://github.com/vettom/PythonBasics)  :Sample python script and functions for beginners
 - [Scripts](https://github.com/vettom/Scripts)  : Few shell scripts working with AWS CLI
 - [Aces](https://vettom.github.io/aces/) : Wheelchair Basktball moves demonstrated with Adobe After Effect Animation
 
 # Development Principle
-```
-A - Accuracy 
-B - Best Practices
-C - Consistency 
-D - Documentation
-E - Exception Handling
-F - Failure test
-```
+![alt text](https://vettom.github.io/images/dvethos.jpeg "Denny Vettom Development ethos ")
 
 ### Scripts 
  > Requires: Python 3.x, Boto3, AWS Cli Config files
