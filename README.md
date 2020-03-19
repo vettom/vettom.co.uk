@@ -7,7 +7,7 @@
 - [Aces](https://vettom.github.io/aces/) : Wheelchair Basktball moves demonstrated with Adobe After Effect Animation
 
 # Development Principle
-![alt text](https://vettom.github.io/images/dvethos.jpeg "Denny Vettom Development ethos ")
+![alt text](https://vettom.github.io/images/dvethos.jpg "Denny Vettom Development ethos ")
 
 ### Scripts 
  > Requires: Python 3.x, Boto3, AWS Cli Config files
