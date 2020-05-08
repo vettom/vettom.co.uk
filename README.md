@@ -1,6 +1,15 @@
 # vettom.github.io ![alt text](https://vettom.github.io/images/dv-tec-logo-round2cm.png "Denny Vettom  Tech Logo")
 
 ### My Public Repos 
+| My Repos   | Description|
+|------------|------------|
+| [Kubernetes](https://github.com/vettom/Kubernetes) |  Kubernetes exam tips and sample files that works.|
+| [AWS-Boto3](https://github.com/vettom/Aws-Boto3) | Python scripts using AWS Boto3. Also advanced with a text based CMDB |
+| [Python Basics](https://github.com/vettom/PythonBasics) | Sample python script and functions for beginners |
+| [Scripts](https://github.com/vettom/Scripts) | Few shell scripts working with AWS CLI |
+| [Aces WheelchairBasketball](https://vettom.github.io/aces/)| Wheelchair Basktball moves demonstrated with Adobe After Effect Animation  |
+
+- [Kubernetes](https://github.com/vettom/Kubernetes) Kubernetes exam tips and sample files that works.
 - [AWS-Boto3](https://github.com/vettom/Aws-Boto3) Python scripts using AWS Boto3. Also advanced with a text based CMDB
 - [Python Basics](https://github.com/vettom/PythonBasics)  :Sample python script and functions for beginners
 - [Scripts](https://github.com/vettom/Scripts)  : Few shell scripts working with AWS CLI
