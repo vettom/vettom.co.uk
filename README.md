@@ -1,4 +1,6 @@
-# vettom.github.io ![alt text](https://vettom.github.io/images/dv-tec-logo-round2cm.png "Denny Vettom  Tech Logo")
+## My Blog : [https://cloudadm.blogspot.com](https://cloudadm.blogspot.com/) ![Denny Vettom Logo](https://vettom.github.io/images/dv-tec-logo-round2cm.png "Denny Vettom  Tech Logo")
+
+
 
 ### My Public Repos 
 
@@ -11,7 +13,6 @@
 # Development Principle
 ![alt text](https://vettom.github.io/images/dvethos.jpg "Denny Vettom Development ethos ")
 
-## My Blog : [https://cloudadm.blogspot.com](https://cloudadm.blogspot.com/)
 
 ### Scripts 
  > Requires: Python 3.x, Boto3, AWS Cli Config files
