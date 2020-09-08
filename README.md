@@ -11,7 +11,7 @@
 # Development Principle
 ![alt text](https://vettom.github.io/images/dvethos.jpg "Denny Vettom Development ethos ")
 
-## [My Blog : cloudadm.blogspot.com](https://cloudadm.blogspot.com/)
+## My Blog : [https://cloudadm.blogspot.com](https://cloudadm.blogspot.com/)
 
 ### Scripts 
  > Requires: Python 3.x, Boto3, AWS Cli Config files
